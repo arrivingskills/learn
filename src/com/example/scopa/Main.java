@@ -10,9 +10,9 @@ import com.example.scopa.player.HumanPlayer;
  * The code compiles and runs, prints the initial table and hands after the deal,
  * and leaves TODOs where you can implement full game logic (captures, scoring, etc.).
  *
- * Implemented capture selection logic in ScopaRules.possibleCaptures using
+ * I implemented capture selection in ScopaRules.possibleCaptures using
  * exact-match precedence and a backtracking search for sum-equal combinations.
- * Added thorough inline comments and a small helper.
+ * Added inline comments and a small helper.
  * https://www.geeksforgeeks.org/dsa/introduction-to-backtracking-2/
  *
  * Enforcing exact match precedence. This rule states that if you can capture
