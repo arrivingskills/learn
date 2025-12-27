@@ -1,0 +1,54 @@
+<Comment> { "Egg file for 7 of Coins - Scopa Card" }
+
+<Texture> card_texture {
+  "assets/textures/7_coins.png"
+  <Scalar> format { rgba }
+  <Scalar> wrap { repeat }
+}
+
+<Material> card_material {
+  <Scalar> diffuse { 1.0 1.0 1.0 1.0 }
+  <Scalar> ambient { 0.2 0.2 0.2 1.0 }
+  <Scalar> specular { 0.1 0.1 0.1 1.0 }
+  <Scalar> shininess { 10.0 }
+}
+
+<Group> card_7_coins {
+  <Transform> {
+    <Matrix4> {
+      1.0 0.0 0.0 0.0
+      0.0 1.0 0.0 0.0
+      0.0 0.0 1.0 0.0
+      0.0 0.0 0.0 1.0
+    }
+  }
+
+  <VertexPool> vertices {
+    <Vertex> 0 {
+      -0.5 0.0 -0.7
+      <UV> { 0.0 1.0 }
+      <Normal> { 0.0 1.0 0.0 }
+    }
+    <Vertex> 1 {
+      0.5 0.0 -0.7
+      <UV> { 1.0 1.0 }
+      <Normal> { 0.0 1.0 0.0 }
+    }
+    <Vertex> 2 {
+      0.5 0.0 0.7
+      <UV> { 1.0 0.0 }
+      <Normal> { 0.0 1.0 0.0 }
+    }
+    <Vertex> 3 {
+      -0.5 0.0 0.7
+      <UV> { 0.0 0.0 }
+      <Normal> { 0.0 1.0 0.0 }
+    }
+  }
+
+  <Polygon> {
+    <TRef> { card_texture }
+    <MRef> { card_material }
+    <VertexRef> { 0 1 2 3 <Ref> { vertices } }
+  }
+}
