@@ -1,13 +1,13 @@
 
 <Texture> card_front_texture {
-  "assets/textures/7_coins.png"
+  "assets/textures/ace_cups.png"
 }
 
 <Texture> card_back_texture {
   "assets/textures/card_back.png"
 }
 
-<Group> 7_coins {
+<Group> ace_cups {
   <VertexPool> front_vertices {
     <Vertex> 0 {
       -0.5 0.01 -0.7
